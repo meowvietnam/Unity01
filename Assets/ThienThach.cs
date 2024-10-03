@@ -10,6 +10,7 @@ public class ThienThach : Item
         float nowScore = GameManager.instance.GetScore();
         nowScore -= 50f;
         GameManager.instance.SetScore(nowScore);
-
+        Player.instance.SetAnimHurt();
     }
+    
 }
